@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="description" content="Treats by Bee is your go-to for homemade, sweet and baked treats in Benoni. Browse our gallery or contact us to place an order.">
+  <title>Treats by Bee | Home</title>
+  <link rel="stylesheet" href="style.css.css">
+</head>
+<body>
+  <header>
+  <header class="site-header-column">
+  <img src="_images/LOGO.jpg" alt="Treats by Bee logo" class="logo-large">
+  <div>
+    <h1>Treats by Bee</h1>
+  </header>
+<!-- Navigation -->
+<nav>
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="gallery.html">Gallery</a>
+  <a href="contact.html">Contact</a>
+</nav>
+  <main>
+<!-- HERO BANNER SECTION -->
+<section class="hero">
+  <div class="hero-text">
+    <h2>Welcome to Treats by Bee!</h2>
+    <p>We create custom treats for every celebration. From cupcakes to party platters, we’ve got you covered.</p>
+    <a href="contact.html" class="cta-button">Place an Order</a>
+  </div>
+</section>
+
+    <section>
+      <h3>Featured Treats</h3>
+      <button onclick="toggleTreats()">Show Treats</button>
+      <div id="treatsGallery" style="display: none; margin-top:  20px;"> 
+    <img src="_images/Brownie.jpg" alt="Brownie" class="Brownie">
+    <img src="_images/donuts.jpeg" alt="Donuts" class="Donuts">
+    <img src="_images/muffins.jpeg" alt="Muffins" class="muffins">
+    <img src="_images/scones.jpeg" alt="Scones" class="Scones">
+    <img src="_images/treats.jpeg" alt="treats" class="treats">
+      </div>
+      <ul>
+        <li>Scones</li>
+        <li>Donuts</li>
+        <li>Brownies</li>
+        <li>Muffins</li>
+        <li>Treats</li>
+      </ul>
+    </section>
+  </main>
+<!-- TESTIMONIALS -->
+<section class="testimonials">
+  <h3>What Our Customers Say</h3>
+  <div class="testimonial-card">
+    <p>"Best cupcakes I've ever had! The packaging was also so cute." – Nandi</p>
+  </div>
+  <div class="testimonial-card">
+    <p>"Reliable service, delicious treats. My kids loved them!" – Tebogo</p>
+  </div>
+</section
+
+  <footer>
+    <p>&copy; 2025 Treats by Bee</p>
+  </footer>
+
+<script>
+  function toggleTreats(button) {
+    const gallery = document.getElementById("treatsGallery");
+
+    if (gallery.style.display === "none") {
+      gallery.style.display = "flex";
+      button.textContent = "Hide Treats";
+    } else {
+      gallery.style.display = "none";
+      button.textContent = "Show Treats";
+    }
+    </script>
+
+</body>
+</html>

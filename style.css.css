@@ -1,0 +1,410 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  /* Body styling */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #fffaf6;
+    color: #4a2c2a;
+    line-height: 1.6;
+    padding: 20px;
+  }
+  /* Header */
+  header {
+    background-color: #fddac8;
+    color: #4a2c2a;
+    padding: 20px;
+    text-align: center;
+  }
+  /* Navigation */
+  nav {
+    background-color: #ffe1d3;
+    padding: 10px;
+    text-align: center;
+  }
+  nav a {
+    color: #4a2c2a;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+  }
+  nav a:hover {
+    color: #bf5b17;
+  }
+  
+  /* Main content */
+  main {
+    margin-top: 20px;
+  }
+  
+  /* Section and article padding */
+  section, article {
+    margin-bottom: 30px;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #fddac8;
+    color: #4a2c2a;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+  }
+  
+  /* Image gallery */
+  .gallery img {
+    width: 300px;
+    height: auto;
+    margin: 10px;
+    border: 3px solid #ffe1d3;
+    border-radius: 8px;
+  }
+  
+  /* Contact form area */
+  form {
+    max-width: 600px;
+    margin: auto;
+    background: #fff2ea;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+  }
+  
+  form input[type="submit"] {
+    background-color: #bf5b17;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  form input[type="submit"]:hover {
+    background-color: #a04613;
+  }
+  /* Gallery styling */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.gallery img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+.gallery img:hover {
+  transform: scale(1.05);
+}
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 2s ease-in forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+/* ========== Responsive Design for Mobile ========== */
+@media (max-width: 768px) {
+  body {
+    padding: 10px;
+    font-size: 1em;
+  }
+
+  header, footer {
+    padding: 10px;
+    text-align: center;
+  }
+
+  nav {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  nav a {
+    margin: 0;
+  }
+
+  main {
+    margin-top: 15px;
+  }
+
+  section, article {
+    margin-bottom: 20px;
+  }
+
+  .gallery {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .gallery img {
+    width: 90%;
+    height: auto;
+  }
+
+  form {
+    width: 100%;
+    padding: 15px;
+  }
+
+  iframe {
+    width: 100% !important;
+    height: auto;
+  }
+}
+.site-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.logo {
+  height: 80px;
+}
+/* ================= Additional Styling ================= */
+
+/* Style the h1 site title more elegantly */
+header h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+/* Slogan under title */
+header p {
+  font-size: 1.1em;
+  font-style: italic;
+  margin-top: 5px;
+}
+
+/* Featured Treats list */
+ul {
+  list-style-type: square;
+  padding-left: 20px;
+  line-height: 1.8;
+  font-size: 18px;
+}
+
+/* Button-like styling for links if you want */
+.button-link {
+  background-color: #bf5b17;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 15px;
+}
+.button-link:hover {
+  background-color: #a04613;
+}
+
+/* Improve spacing and max-width for main content */
+main {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+/* Logo image spacing if inside header */
+.logo {
+  height: 80px;
+  width: auto;
+  margin-right: 10px;
+}
+
+/* Soft box shadow for sections */
+section, article {
+  background-color: #fff7f0;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+/* Improve mobile text alignment and logo size */
+@media (max-width: 480px) {
+  .logo {
+    height: 60px;
+  }
+
+  header h1 {
+    font-size: 1.8em;
+  }
+
+  header p {
+    font-size: 1em;
+  }
+}
+/* ========== ENHANCED STYLES ========== */
+
+/* Smooth transitions across the site */
+* {
+  transition: all 0.3s ease;
+}
+
+/* Header enhancements */
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+header p {
+  font-style: italic;
+  font-size: 1.1rem;
+}
+
+/* Navigation glow on hover */
+nav a:hover {
+  color: #bf5b17;
+  text-shadow: 0 0 5px #ffe1d3;
+}
+
+/* Section headings */
+section h2, article h2 {
+  color: #bf5b17;
+  margin-bottom: 15px;
+  font-size: 1.8rem;
+  border-bottom: 2px solid #ffe1d3;
+  padding-bottom: 5px;
+}
+
+/* Better list styling */
+ul {
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+ul li {
+  margin-bottom: 8px;
+}
+
+/* Contact form focus effects */
+form input:focus,
+form textarea:focus {
+  outline: none;
+  border: 1px solid #bf5b17;
+  box-shadow: 0 0 5px #fddac8;
+}
+
+/* Button pulse on hover */
+form input[type="submit"]:hover {
+  transform: scale(1.03);
+  box-shadow: 0 4px 12px rgba(191, 91, 23, 0.3);
+}
+
+/* Footer subtle shadow */
+footer {
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* Gallery image hover caption (optional) */
+.gallery img:hover {
+  filter: brightness(1.1);
+  transform: scale(1.07);
+}
+
+/* Optional: spacing below logo */
+.site-header {
+  margin-bottom: 15px;
+}
+
+/* Optional: subtle section background */
+section, article {
+  background-color: #fff8f2;
+  padding: 20px;
+  border-radius: 10px;
+}
+#treatsGallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+#treatsGallery img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+#treatsGallery img:hover {
+  transform: scale(1.05);
+}
+/* Make the logo large and prominent */
+.logo-large {
+  height: 120px;
+  max-width: 100%;
+}
+
+/* Header flex layout for logo + text */
+.site-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  padding: 30px 20px;
+  background-color: #fddac8;
+  border-bottom: 4px solid #ffe1d3;
+}
+.site-header-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 30px 20px;
+  background-color: #fddac8;
+  border-bottom: 4px solid #ffe1d3;
+}
+.main-nav {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  background-color: #fff4ef;
+  padding: 15px 0;
+  font-weight: bold;
+}
+
+.main-nav a {
+  text-decoration: none;
+  color: #444;
+  font-size: 16px;
+}
+
+.main-nav a:hover {
+  color: #d35400;
+}
+button {
+  background-color: #f28c8c;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+button:hover {
+  background-color: #e76e6e;
+}
